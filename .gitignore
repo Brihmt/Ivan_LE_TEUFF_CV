@@ -1,0 +1,11 @@
+# Fichiers système inutiles
+.DS_Store
+Thumbs.db
+
+# Logs et backups
+*.log
+*.bak
+*.tmp
+
+# Éviter d'envoyer les fichiers de l'éditeur
+.vscode/
