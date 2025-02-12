@@ -31,3 +31,137 @@ header {
     object-fit: cover;
     border-radius: 10px;
 }
+
+
+
+/* Style pour les projets*/
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.title-box {
+    width: 70%;
+}
+.tech-stack {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    border-left: 2px solid gray;
+}
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 60px;
+}
+.tech-item img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+.tech-item p {
+    margin-top: auto;
+}
+.project-images {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+.project-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+
+/* organisation title box */
+
+/*div {
+    border: 1px solid red;
+}*/
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /*border: 1px solid red;*/
+    text-align: left;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self:stretch;
+    gap: 10px;
+    width: 100%; 
+    /*border: 1px solid blue;*/
+    flex-grow: 0;
+}
+
+.logos img {
+    height: 100px;
+}
+
+.title-nameAndDate {
+    text-align: center;
+    justify-self: start;
+    /*border: 1px solid red;*/
+    flex-grow: 1
+}
+
+.date {
+    font-style: italic;
+    color: gray;
+}
+
+.description {
+    color: gray;
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .title-box, .tech-stack {
+        width: 100%;
+    }
+    .tech-stack {
+        justify-content: center;
+    }
+}
+@media (min-width: 601px) {
+    .project-images {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+@media (min-width: 800px) {
+    .project-images {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    h1 {
+        font-size: 36px;
+    }
+}
+@media (min-width: 1000px) {
+    .project-images {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    h1 {
+        font-size: 48px;
+    }
+}
