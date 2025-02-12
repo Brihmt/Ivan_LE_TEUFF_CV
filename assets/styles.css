@@ -113,7 +113,7 @@ header {
 .title-nameAndDate {
     text-align: center;
     justify-self: start;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     flex-grow: 1
 }
 
